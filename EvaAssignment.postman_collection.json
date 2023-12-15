@@ -1,0 +1,352 @@
+{
+  "info": {
+    "_postman_id": "42e2eea4-a54b-498a-8ef4-c849a71a1f5b",
+    "name": "EvaAssignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Share Requests",
+      "item": [
+        {
+          "name": "Get All Shares",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/share",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Share By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/share/1",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Insert Share",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ShareSymbol\": \"CHF\",\r\n    \"ShareCount\": 51,\r\n    \"Price\": 1426.23\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/share",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Share By Id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ShareSymbol\": \"CHF\",\r\n    \"ShareCount\": 39,\r\n    \"Price\": 1112.34\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/share/4",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share", "4"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Share Price By Id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Price\": 145.24\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/share/updatePrice/1",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share", "updatePrice", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Share By Id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/share/4",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "share", "4"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User Requests",
+      "item": [
+        {
+          "name": "Get All User",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/user",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "user"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/user/2f2530ae-7cee-4346-82f2-8a8a8e341f28",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "user", "2f2530ae-7cee-4346-82f2-8a8a8e341f28"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create New User",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Name\": \"Jack\",\n    \"WalletBalance\": 1184.21\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/user",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "user"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Data Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Name\": \"Pedro\",\n    \"WalletBalance\": 1024.24\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/user/8e19e177-1f75-4410-8c0a-ea5c934c0358",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "user", "8e19e177-1f75-4410-8c0a-ea5c934c0358"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User By Id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/user/8e19e177-1f75-4410-8c0a-ea5c934c0358",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "user", "8e19e177-1f75-4410-8c0a-ea5c934c0358"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Transaction Requests",
+      "item": [
+        {
+          "name": "Get All Transaction",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/transaction",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "transaction"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Transaction By User Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/transaction/70364604-fb4d-4d5c-a0ae-b0cd9db10700",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": [
+                "api",
+                "transaction",
+                "70364604-fb4d-4d5c-a0ae-b0cd9db10700"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Portfolio Requests",
+      "item": [
+        {
+          "name": "Get All Portfolio",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/portfolio",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "portfolio"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Portfolio By User Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/portfolio/70364604-fb4d-4d5c-a0ae-b0cd9db10700",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": [
+                "api",
+                "portfolio",
+                "70364604-fb4d-4d5c-a0ae-b0cd9db10700"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Bulk Insert",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Sell Share",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UserId\": \"70364604-fb4d-4d5c-a0ae-b0cd9db10700\",\r\n    \"ShareId\": 3,\r\n    \"ShareSize\": 1,\r\n    \"Operation\": \"SELL\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/transaction",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "transaction"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buy Share",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UserId\": \"70364604-fb4d-4d5c-a0ae-b0cd9db10700\",\r\n    \"ShareId\": 3,\r\n    \"ShareSize\": 1,\r\n    \"Operation\": \"BUY\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/transaction",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "transaction"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
